@@ -4,7 +4,6 @@ import com.example.demoMovieJWT.domain.Movie;
 import com.example.demoMovieJWT.domain.User;
 import com.example.demoMovieJWT.exception.UserAlreadyExists;
 import com.example.demoMovieJWT.exception.UserNotFoundException;
-import com.example.demoMovieJWT.service.SecurityTokenGenerate;
 import com.example.demoMovieJWT.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
