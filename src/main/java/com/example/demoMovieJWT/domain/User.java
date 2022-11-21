@@ -14,12 +14,12 @@ public class User {
     private String email;
     private String userName;
     private String address;
-    private long mobileNo;
+    private String mobileNo;
 
     public User() {
     }
 
-    public User(int userId, List<Movie> movieList, String email, String userName, String address, long mobileNo) {
+    public User(int userId, List<Movie> movieList, String email, String userName, String address, String mobileNo) {
         this.userId = userId;
         this.movieList = movieList;
         this.email = email;
@@ -60,11 +60,11 @@ public class User {
         this.address = address;
     }
 
-    public long getMobileNo() {
+    public String getMobileNo() {
         return mobileNo;
     }
 
-    public void setMobileNo(long mobileNo) {
+    public void setMobileNo(String mobileNo) {
         this.mobileNo = mobileNo;
     }
 
