@@ -5,7 +5,7 @@ import com.example.demoMovieJWT.domain.User;
 import com.example.demoMovieJWT.exception.UserAlreadyExists;
 import com.example.demoMovieJWT.exception.UserNotFoundException;
 
-import java.util.List;
+
 
 public interface UserService {
     User addUser(User user) throws UserAlreadyExists;
