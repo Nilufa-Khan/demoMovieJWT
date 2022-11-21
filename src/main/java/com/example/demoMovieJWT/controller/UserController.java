@@ -36,6 +36,7 @@ public class UserController {
             throw  new UserAlreadyExists();
         }
     }
+
     @PutMapping("/addMovie/{email}")
     public ResponseEntity<?> addMovies(@PathVariable String email,@RequestBody Movie movie) throws UserNotFoundException {
         try{
