@@ -13,7 +13,7 @@ public class JwtSecurityTokenGenerator implements SecurityTokenGenerate{
     public Map<String, String> generateToken(User user) {
         String jwtToken = null;
 
-        jwtToken = Jwts.builder().setSubject(user.getUserName())
+        jwtToken = Jwts.builder().setSubject(user.getEmail())
                 .setIssuedAt(new Date())
                 .signWith(SignatureAlgorithm.HS256,"examplekey").compact();
         Map<String,String> map = new HashMap<>();
