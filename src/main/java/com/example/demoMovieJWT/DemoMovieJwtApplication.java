@@ -13,12 +13,12 @@ public class DemoMovieJwtApplication {
 		SpringApplication.run(DemoMovieJwtApplication.class, args);
 	}
 	@Bean
-	public FilterRegistrationBean filterBeand()
+	public FilterRegistrationBean jwtFilter()
 	{
-		FilterRegistrationBean filterreg = new FilterRegistrationBean();
-		filterreg.setFilter(new JwtFilter());
-		filterreg.addUrlPatterns("/userdata/v1/fetchusers");
-		return filterreg;
+		FilterRegistrationBean filterregBean = new FilterRegistrationBean();
+		filterregBean.setFilter(new JwtFilter());
+		filterregBean.addUrlPatterns("/addMovie/*");
+		return filterregBean;
 	}
 
 }
