@@ -16,13 +16,13 @@ import java.util.ArrayList;
 @RestController
 public class UserController {
     UserService userService;
-    SecurityTokenGenerate securityTokenGenerate;
+
 
 
     @Autowired
-    public  UserController(UserService userService, SecurityTokenGenerate securityTokenGenerate){
+    public  UserController(UserService userService){
         this.userService = userService;
-        this.securityTokenGenerate = securityTokenGenerate;
+
     }
 
 
